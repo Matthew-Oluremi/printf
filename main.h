@@ -11,8 +11,8 @@ int print_chr(va_list args, char *buff, unsigned int nbuf);
 int print_str(va_list args, char *buff, unsigned int nbuf);
 int print_int(va_list args, char *buff, unsigned int nbuf);
 int ev_print_func(const char *s, int index);
-unsigned int handl_buf(char *buf, char c, unsigned int ibuf);
-int print_buf(char *buf, unsigned int nbuf);
+unsigned int handl_buf(char *buff, char c, unsigned int nbuf);
+int print_buf(char *buff, unsigned int ibuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 
 /**

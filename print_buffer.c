@@ -2,11 +2,12 @@
 
 /**
  * print_buf - prints buffer
- * @buf: buffer pointer
- * @nbuffer: number of bytes to print
+ * @buff: buffer pointer
+ * @ibuf: number of bytes to print
  * Return: number of bytes printed.
  */
-int print_buf(char *buf, unsigned int nbuffer)
+
+int print_buf(char *buff, unsigned int ibuf)
 {
-	return (write(1, buf, nbuffer));
+	return (write(1, buff, ibuf));
 }

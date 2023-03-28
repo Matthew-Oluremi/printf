@@ -2,20 +2,21 @@
 
 /**
  * handl_buf - concatenates buffer characters
- * @buf: buffer pointer
+ * @buff: buffer pointer
  * @c: charcter to concat
- * @indbuf: index of buffer pointer
+ * @nbuf: index of buffer pointer
  * Return: index of buffer pointer
  */
-unsigned int handl_buf(char *buf, char c, unsigned int indbuf)
+
+unsigned int handl_buf(char *buff, char c, unsigned int nbuf)
 {
-	if (indbuf == 1024)
+	if (nbuf == 1024)
 	{
-		print_buf(buf, indbuf);
-		buf = 0;
+		print_buf(buff, nbuf);
+		nbuf = 0;
 
 	}
-	buf[indbuf] = c;
-	indbuf++;
-	return (indbuf);
+	buff[nbuf] = c;
+	nbuf++;
+	return (nbuf);
 }
