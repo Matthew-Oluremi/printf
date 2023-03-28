@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdarg.h>
 
 /**
  * _printf - formatted output conversion and print data.
@@ -14,8 +13,7 @@ int _printf(const char *format, ...)
 	int (*func)(va_list, char *, unsigned int);
 	char *buffer;
 
-	va_start(args, format);
-	buffer = malloc(sizeof(char) * 1024);
+	va_start(args, format), buffer = malloc(sizeof(char) * 1024);
 	if (!format || !buffer || (format[n] == '%' && !format[n + 1]))
 		return (-1);
 	if (!format[n])
