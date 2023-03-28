@@ -22,7 +22,7 @@ int print_int(va_list args, char *buff, unsigned int nbuf)
 	}
 	else
 	{
-		int_in = int_inPut;
+		int_inP = int_inPut;
 	}
 
 	int_tempo = int_inP;
@@ -38,5 +38,5 @@ int print_int(va_list args, char *buff, unsigned int nbuf)
 	{
 		nbuf = handl_buf(buff, ((int_inP / dIv) % 10) + '0', nbuf);
 	}
-	return (i + isNeg);
+	return (n + isNeg);
 }

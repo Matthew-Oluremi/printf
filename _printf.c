@@ -30,13 +30,13 @@ int _printf(const char *format, ...)
 			{	func = get_print_func(format, n + 1);
 				if (func == NULL)
 				{
-					if (format[n + 1] == ' ' && !format[i + 2])
+					if (format[n + 1] == ' ' && !format[n + 2])
 						return (-1);
 					handl_buf(buffer, format[n], nbuf), count++, n--;
 				}
 				else
 				{
-					count += function(args, buffer, nbuf);
+					count += func(args, buffer, nbuf);
 					n += ev_print_func(format, n + 1);
 				}
 			} n++;
