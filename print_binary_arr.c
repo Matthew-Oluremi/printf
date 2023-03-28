@@ -15,7 +15,7 @@ char *fill_binary_array(char *binary, long int int_inP, int isNeg, int limit)
 	for (n = 0; n < limit; n++)
 		binary[n] = '0';
 	binary[limit] = '\0';
-	for (n = limit - 1; int_inP > 1; i--)
+	for (n = limit - 1; int_inP > 1; n--)
 	{
 		if (int_inP == 2)
 			binary[n] = '0';

@@ -15,7 +15,7 @@ unsigned int handl_buf(char *buff, char c, unsigned int nbuf);
 int print_buf(char *buff, unsigned int ibuf);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
-char *fill_binary_array(char *binary, long int int_inP, int isNeg, int limit)
+char *fill_binary_array(char *binary, long int int_inP, int isNeg, int limit);
 
 /**
  * struct print - struct for printer functions
