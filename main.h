@@ -13,6 +13,7 @@ int print_int(va_list args, char *buff, unsigned int nbuf);
 int ev_print_func(const char *s, int index);
 unsigned int handl_buf(char *buff, char c, unsigned int nbuf);
 int print_buf(char *buff, unsigned int ibuf);
+int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 char *fill_binary_array(char *binary, long int int_inP, int isNeg, int limit)
 
