@@ -22,6 +22,7 @@ int print_hex(va_list args, char *buff, unsigned int nbuf);
 int print_oct(va_list args, char *buff, unsigned int nbuf);
 int print_unt(va_list args, char *buff, unsigned int nbuf);
 int print_upx(va_list args, char *buff, unsigned int nbuf);
+int prinhhex(va_list args, char *buff, unsigned int nbuf);
 
 /**
  * struct print - struct for printer functions
