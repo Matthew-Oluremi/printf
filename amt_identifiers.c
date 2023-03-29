@@ -12,6 +12,7 @@ int ev_print_func(const char *s, int index)
 	print_t pr[] = {
 		{"c", print_chr}, {"s", print_str}, {"i", print_int},
 		{"d", print_int}, {"%", print_prg}, {"b", print_bnr},
+		{"o", print_oct}, {"x", print_hex}, {"X", print_upx},
 		{NULL, NULL}};
 
 	int m = 0, y = 0, index1;

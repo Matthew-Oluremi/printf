@@ -11,7 +11,8 @@ int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int)
 		{"c", print_chr}, {"s", print_str},
 		{"i", print_int}, {"d", print_int},
 		{" %", print_prg}, {"b", print_bnr},
-		{NULL, NULL}};
+		{"o", print_oct}, {"x", print_hex},
+		{"X", print_upx}, {NULL, NULL}};
 
 	int m = 0, y = 0, index1;
 
