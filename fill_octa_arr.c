@@ -20,7 +20,7 @@ char *fill_oct_array(char *bry, char *octa)
 		else
 			limit = 2;
 		for (om = 0, n = 1; y <= limit; y *= 2, n--)
-			op = ((bry[n] - '0') * y) + om;
+			om = ((bry[n] - '0') * y) + om;
 		n++;
 		octa[noct] = om + '0';
 	}

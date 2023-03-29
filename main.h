@@ -16,6 +16,12 @@ int print_buf(char *buff, unsigned int ibuf);
 int print_bnr(va_list arguments, char *buf, unsigned int ibuf);
 int (*get_print_func(const char *s, int index))(va_list, char *, unsigned int);
 char *fill_binary_array(char *binary, long int int_inP, int isNeg, int limit);
+char *fill_hex_array(char *bry, char *hexa, int nsupp, int limit);
+char *fill_oct_array(char *bry, char *octa);
+int print_hex(va_list args, char *buff, unsigned int nbuf);
+int print_oct(va_list args, char *buff, unsigned int nbuf);
+int print_unt(va_list args, char *buff, unsigned int nbuf);
+int print_upx(va_list args, char *buff, unsigned int nbuf);
 
 /**
  * struct print - struct for printer functions

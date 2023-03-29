@@ -3,19 +3,19 @@
 /**
  * print_unt - outputs an unsigned integer
  * @args: number to output
- * @buf: pointer to buffer
- * @ibuf: index for buffer pointer
+ * @buff: pointer to buffer
+ * @nbuf: index for buffer pointer
  * Return: number of chars printed.
  */
 
-int print_unt(va_list args, char *buf, unsigned int ibuf)
+int print_unt(va_list args, char *buff, unsigned int nbuf)
 {
 	unsigned int intIn;
 	unsigned int intTemp;
 	unsigned int itterator;
 	unsigned int div;
 
-	intIn = va_arg(arguments, unsigned int);
+	intIn = va_arg(args, unsigned int);
 	intTemp = intIn;
 	div = 1;
 
@@ -27,7 +27,7 @@ int print_unt(va_list args, char *buf, unsigned int ibuf)
 
 	for (itterator = 0; div > 0; div /= 10, itterator++)
 	{
-		ibuf = handle_buffer(buf, ((intIn / div) % 10) + '0', ibuf);
+		nbuf = handl_buf(buff, ((intIn / div) % 10) + '0', nbuf);
 	}
 
 	return (itterator);
