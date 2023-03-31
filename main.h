@@ -1,8 +1,7 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
-#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 
@@ -24,7 +23,6 @@ int print_oct(va_list args, char *buff, unsigned int nbuf);
 int print_unt(va_list args, char *buff, unsigned int nbuf);
 int print_upx(va_list args, char *buff, unsigned int nbuf);
 int prinhhex(va_list args, char *buff, unsigned int nbuf);
-int print_pointer(va_list args, char *buff, unsigned int nbuf);
 
 /**
  * struct print - struct for printer functions
