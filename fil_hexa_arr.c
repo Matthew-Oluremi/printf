@@ -12,7 +12,10 @@
  */
 char *fill_hex_array(char *bry, char *hexa, int nsupp, int limit)
 {
-	int om, n, y, tolet;
+	int om;
+	int n;
+	int y;
+	int tolet;
 
 	hexa[limit] = '\0';
 	if (nsupp)
