@@ -43,12 +43,9 @@ int _printf(const char *format, ...)
 			} n++;
 		}
 		else
-		{
-			handl_buf(buffer, format[n], nbuf);
-			count++;
-		}
+			handl_buf(buffer, format[n], nbuf), count++;
 		for (nbuf = count; nbuf > 1024; nbuf -= 1024)
-		{}
+			;
 	}
 	print_buf(buffer, nbuf), free(buffer), va_end(args);
 	return (count);
