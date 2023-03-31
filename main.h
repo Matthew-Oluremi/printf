@@ -1,6 +1,7 @@
 #ifndef _MAIN_H_
 #define _MAIN_H_
 
+#include <stdio.h>
 #include <stdarg.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -22,6 +23,7 @@ int print_hex(va_list args, char *buff, unsigned int nbuf);
 int print_oct(va_list args, char *buff, unsigned int nbuf);
 int print_unt(va_list args, char *buff, unsigned int nbuf);
 int print_upx(va_list args, char *buff, unsigned int nbuf);
+int print_add(va_list arguments, char *buf, unsigned int ibuf);
 int prinhhex(va_list args, char *buff, unsigned int nbuf);
 
 /**
