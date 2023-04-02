@@ -25,8 +25,6 @@ int print_unt(va_list args, char *buff, unsigned int nbuf);
 int print_upx(va_list args, char *buff, unsigned int nbuf);
 int print_add(va_list arguments, char *buf, unsigned int ibuf);
 int prinhhex(va_list args, char *buff, unsigned int nbuf);
-int print_rev(va_list args, char *buff, unsigned int nbuf);
-int print_rot(va_list args, char *buff, unsigned int nbuf);
 
 /**
  * struct print - struct for printer functions
